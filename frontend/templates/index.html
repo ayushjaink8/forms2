@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    {% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Forms</title>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="{% static 'Bootstrap/dist/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'css/body.css' %}">
+
+</head>
+
+<body>
+
+    <div id="app"></div>
+    <!-- <h1>from index.html</h1> -->
+
+    <script src="{% static 'js/main.js' %}"></script>
+
+    <script src="{% static 'Bootstrap/assets/js/vendor/jquery-slim.min.js' %}"></script>
+    <script src="{% static 'Bootstrap/assets/js/vendor/popper.min.js' %}"></script>
+    <script src="{% static 'Bootstrap/dist/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'Bootstrap/assets/js/vendor/holder.min.js' %}"></script>
+    <script>
+        // For header
+        $(function () {
+            'use strict'
+            $('[data-toggle="offcanvas"]').on('click', function () {
+              $('.offcanvas-collapse').toggleClass('open')
+            })
+        })
+    </script>
+    <script src="{% static 'js/form_validations.js' %}"></script>
+</body>
+</html>
